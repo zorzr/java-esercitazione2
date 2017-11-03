@@ -9,7 +9,7 @@
 
 public class ImgVect {
     private int n_max, n;
-    Forma[] vett;
+    private Forma[] vett;
     
     public ImgVect (int max) {
         n = 0;
@@ -52,6 +52,10 @@ public class ImgVect {
     }
     
     // TESTER
+    public Forma[] getVett() {
+        return vett;
+    }
+    
     public void print() {
         int i;
         

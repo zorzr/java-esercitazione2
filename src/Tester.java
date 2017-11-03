@@ -29,7 +29,7 @@ public class Tester {
         System.out.println("Area BLACK = " + imm.area_col(Colore.BLACK));
         
         // INTERFACE
-        Arrays.sort(imm.vett);
+        Arrays.sort(imm.getVett());
         System.out.print("\n");
         imm.print();
     }
