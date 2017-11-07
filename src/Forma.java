@@ -19,9 +19,6 @@ public abstract class Forma implements Comparable<Forma> {
     public abstract double area();
     public abstract double perimetro();
     
-    // TESTER
-    public abstract String toString();
-    
     // INTERFACE
     public int compareTo(Forma f){
         if (this.area() < f.area()) {
