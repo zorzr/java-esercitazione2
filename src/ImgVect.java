@@ -1,9 +1,9 @@
 // ESERCITAZIONE 2
+import java.util.Arrays;
 
 /**
  * @see Forma
  * @see Colore
- * @see Tester
  * @author zorzr
  */
 
@@ -52,15 +52,19 @@ public class ImgVect {
     }
     
     // TESTER
-    public Forma[] getVett() {
-        return vett;
+    public void sortVett() {
+        Arrays.sort(vett, 0, n);
     }
     
-    public void print() {
-        int i;
+    public String toString() {
+        String s = "";
         
-        for (i = 0; i < n; i++) {
-            System.out.println(vett[i].toString());
+        for (Forma f : vett) {
+            if (f != null) {
+                s += f + "\n";
+            }
         }
+        
+        return s;
     }
 }

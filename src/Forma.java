@@ -2,7 +2,6 @@
 
 /**
  * @see Colore
- * @see Tester
  * @author zorzr
  */
 
@@ -27,6 +26,9 @@ public abstract class Forma implements Comparable<Forma> {
     public int compareTo(Forma f){
         if (this.area() < f.area()) {
             return -1;
+        }
+        else if (this.area() > f.area()) {
+            return 1;
         }
         return 0;
     }

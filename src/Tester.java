@@ -1,5 +1,4 @@
 // ESERCITAZIONE 2
-import java.util.Arrays;
 
 /**
  * @see Forma
@@ -20,17 +19,16 @@ public class Tester {
         imm.agg_forma( new Cerchio(3, Colore.BLACK) );
         imm.agg_forma( new Cerchio(3, Colore.BLACK) );
         
-        imm.print();
+        System.out.println(imm);
         
-        System.out.println("\nArea totale = " + imm.area_tot());
+        System.out.println("Area totale = " + imm.area_tot());
         System.out.println("Area RED = " + imm.area_col(Colore.RED));
         System.out.println("Area BLUE = " + imm.area_col(Colore.BLUE));
         System.out.println("Area YELLOW = " + imm.area_col(Colore.YELLOW));
         System.out.println("Area BLACK = " + imm.area_col(Colore.BLACK));
         
         // INTERFACE
-        Arrays.sort(imm.getVett());
-        System.out.print("\n");
-        imm.print();
+        imm.sortVett();
+        System.out.println("\n" + imm);
     }
 }
